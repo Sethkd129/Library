@@ -1,0 +1,50 @@
+/*
+    border.. adds a border around object
+    padding... the distance in pixels that the object will
+    be from the border
+    margin... the distance in pixels the each border will be from eachother
+*/
+.book-card {
+    box-sizing: border-box; /* makes width include padding+border, so width:100px is the TOTAL width, not content+padding+border stacked */
+    border: 1px solid rgb(226, 22, 56);
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(240, 184, 111);
+    
+
+}
+
+.new-book-bttn {
+    width: 100px;
+    margin: 10px;
+}
+
+#library {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-auto-flow: column;
+    grid-auto-columns: 100px;
+    gap: 10px;
+}
+
+.colorBox {
+    border: 1px solid #e21638;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(105, 29, 204);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    border: 3px solid #000000;
+    border-radius: 50%;
+    padding: 20px 40px;
+    display: inline-block;
+    width: fit-content;
+    text-align: center;
+    background-color: cyan;
+}

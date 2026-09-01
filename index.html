@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">THE LIBRARY OF SXTH</h1>
+    <div id="library"></div>
+    <button id="new-book-bttn">New Book</button>
+    <dialog id="book-dialog">
+        <form id="book-form">
+            <label>Title: <input type="text" id="title" required></label>
+            <label>Author: <input type="text" id="author" required></label>
+            <label>Pages: <input type="number" id="pages" min="1" step="1" required></label>
+            <label>Read: <input type="checkbox" id="read"></label>
+            <button type="submit">Add Book</button>
+            <button type="button" id="cancel">Cancel</button>
+        </form>
+    </dialog>
+    <div id="colorBox"></div>
+    <script src="index.js"></script>
+</body>
+</html>
